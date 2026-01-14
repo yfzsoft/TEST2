@@ -1,0 +1,7 @@
+{
+  "name": "Heft Security",
+  "description": "Professional security solutions including surveillance, fire detection, intrusion systems, and access control.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
