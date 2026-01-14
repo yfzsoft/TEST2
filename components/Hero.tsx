@@ -10,7 +10,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote }) => {
     <div className="relative bg-heft-dark pt-20 overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-40">
         <img 
-          src="https://picsum.photos/1920/1080?grayscale" 
+          src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&q=80&w=1920" 
           alt="Secure home background" 
           className="w-full h-full object-cover"
         />
@@ -19,14 +19,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote }) => {
       
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="md:w-3/5">
-          <div className="inline-flex items-center space-x-2 bg-heft-red/10 border border-heft-red/30 rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm">
-             <span className="w-2 h-2 rounded-full bg-heft-red animate-pulse"></span>
-             <span className="text-heft-red font-semibold text-sm tracking-wide uppercase">24/7 Professional Monitoring</span>
+          <div className="inline-flex items-center space-x-2 bg-heft-blue/10 border border-heft-blue/30 rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm">
+             <span className="w-2 h-2 rounded-full bg-heft-blue animate-pulse"></span>
+             <span className="text-heft-blue font-semibold text-sm tracking-wide uppercase">24/7 Professional Monitoring</span>
           </div>
           
           <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
             Complete Security for <br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
               Peace of Mind.
             </span>
           </h1>
@@ -39,7 +39,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote }) => {
           <div className="flex flex-col sm:flex-row gap-4">
             <button 
               onClick={onOpenQuote}
-              className="flex items-center justify-center bg-heft-red hover:bg-red-700 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-red-500/30"
+              className="flex items-center justify-center bg-heft-blue hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-blue-500/30"
             >
               Calculate Your Quote
               <Icon name="arrowRight" className="ml-2" size={20} />
@@ -56,7 +56,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote }) => {
              </div>
              <div className="flex items-center gap-2">
                 <Icon name="check" className="text-green-500" size={16} />
-                <span>0€ Upfront Options</span>
+                <span>Modern Technology</span>
              </div>
              <div className="flex items-center gap-2">
                 <Icon name="check" className="text-green-500" size={16} />

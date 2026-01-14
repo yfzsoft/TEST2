@@ -21,7 +21,6 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate API call
     setTimeout(() => {
       alert("Request sent! An expert will call you shortly.");
       onClose();
@@ -39,9 +38,9 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
           <Icon name="close" size={24} />
         </button>
 
-        <div className="bg-heft-red p-6 text-white text-center">
+        <div className="bg-heft-blue p-6 text-white text-center">
           <h2 className="text-2xl font-bold">Get Your Free Quote</h2>
-          <p className="text-red-100 text-sm mt-1">Takes less than 1 minute</p>
+          <p className="text-blue-100 text-sm mt-1">Takes less than 1 minute</p>
         </div>
 
         <div className="p-8">
@@ -57,12 +56,12 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
                         setFormData({...formData, type: SecurityType.HOME});
                         setStep(2);
                     }}
-                    className="p-6 border-2 border-gray-100 hover:border-heft-red rounded-xl flex flex-col items-center gap-3 transition-all hover:bg-red-50 group"
+                    className="p-6 border-2 border-gray-100 hover:border-heft-blue rounded-xl flex flex-col items-center gap-3 transition-all hover:bg-blue-50 group"
                   >
                     <div className="w-12 h-12 bg-gray-100 group-hover:bg-white rounded-full flex items-center justify-center">
-                        <Icon name="lock" className="text-gray-600 group-hover:text-heft-red" />
+                        <Icon name="lock" className="text-gray-600 group-hover:text-heft-blue" />
                     </div>
-                    <span className="font-bold text-gray-700 group-hover:text-heft-red">Home</span>
+                    <span className="font-bold text-gray-700 group-hover:text-heft-blue">Home</span>
                   </button>
 
                   <button
@@ -71,12 +70,12 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
                         setFormData({...formData, type: SecurityType.BUSINESS});
                         setStep(2);
                     }}
-                    className="p-6 border-2 border-gray-100 hover:border-heft-red rounded-xl flex flex-col items-center gap-3 transition-all hover:bg-red-50 group"
+                    className="p-6 border-2 border-gray-100 hover:border-heft-blue rounded-xl flex flex-col items-center gap-3 transition-all hover:bg-blue-50 group"
                   >
                      <div className="w-12 h-12 bg-gray-100 group-hover:bg-white rounded-full flex items-center justify-center">
-                        <Icon name="shield" className="text-gray-600 group-hover:text-heft-red" />
+                        <Icon name="shield" className="text-gray-600 group-hover:text-heft-blue" />
                     </div>
-                    <span className="font-bold text-gray-700 group-hover:text-heft-red">Business</span>
+                    <span className="font-bold text-gray-700 group-hover:text-heft-blue">Business</span>
                   </button>
                 </div>
               </div>
@@ -90,7 +89,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
                   <input 
                     required 
                     type="text" 
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-heft-red focus:border-transparent outline-none"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-heft-blue focus:border-transparent outline-none"
                     placeholder="John Doe"
                     value={formData.name}
                     onChange={e => setFormData({...formData, name: e.target.value})}
@@ -101,7 +100,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
                   <input 
                     required 
                     type="tel" 
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-heft-red focus:border-transparent outline-none"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-heft-blue focus:border-transparent outline-none"
                     placeholder="06 12 34 56 78"
                     value={formData.phone}
                     onChange={e => setFormData({...formData, phone: e.target.value})}
@@ -112,7 +111,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
                   <input 
                     required 
                     type="email" 
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-heft-red focus:border-transparent outline-none"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-heft-blue focus:border-transparent outline-none"
                     placeholder="john@example.com"
                     value={formData.email}
                     onChange={e => setFormData({...formData, email: e.target.value})}
@@ -129,7 +128,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
                     </button>
                     <button 
                         type="submit" 
-                        className="w-2/3 px-4 py-3 bg-heft-red text-white rounded-lg font-bold hover:bg-red-700 shadow-lg"
+                        className="w-2/3 px-4 py-3 bg-heft-blue text-white rounded-lg font-bold hover:bg-blue-700 shadow-lg"
                     >
                         See My Quote
                     </button>
